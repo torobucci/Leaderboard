@@ -70,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://torobucci.github.io/Leaderboard/dist)
+- [Coming soon]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
