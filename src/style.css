@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  display: block;
+  padding: 0.2rem;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+header,
+main {
+  margin-top: 40px;
+  margin-left: 5vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10%;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.refresh {
+  max-height: 40px;
+}
+
+.submit {
+  align-self: flex-end;
+}
+
+.refresh,
+.submit {
+  padding: 0.15rem;
+  font-size: 15px;
+}
+
+.recent-scores {
+  width: 30vw;
+}
+
+.add-score {
+  width: 20vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.scores {
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.scores li {
+  padding: 0.4rem;
+}
+
+.scores li:nth-child(even) {
+  background-color: rgb(189, 189, 189);
+}
