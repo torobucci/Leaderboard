@@ -1,43 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/meniertrial');
+@import url('https://fonts.cdnfonts.com/css/roboto-mono');
+@import url('https://fonts.cdnfonts.com/css/tt-marxiana-trial');
+@import url('https://fonts.cdnfonts.com/css/default-sans');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Default Sans', sans-serif;
+}
+
+body {
+  background: rgba(122, 120, 120, 0.8);
 }
 
 input {
   display: block;
-  padding: 0.2rem;
+  padding: 0.3rem;
+  background: #acaaa8;
+  border: 1px solid rgb(172, 170, 168);
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
 }
 
 input::placeholder {
-  font-size: 15px;
+  font-size: 1.2rem;
+  font-family: 'Default Sans', sans-serif;
 }
 
-header,
-main {
-  margin-top: 40px;
-  margin-left: 5vw;
+header {
+  color: black;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: 'TT Marxiana Trial', sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
+#intro {
+  font-family: 'meniertrial', sans-serif;
+  font-weight: 400;
+  font-size: 8vw;
+  text-align: center;
+}
+
 .container {
   display: flex;
   justify-content: flex-start;
-  column-gap: 10%;
+  padding: 2vh 5vw;
+  column-gap: 10vw;
 }
 
 .recent-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 2vw;
 }
 
-.refresh {
-  max-height: 40px;
+.fa-ranking-star {
+  font-size: 4vw;
+  vertical-align: middle;
+  margin-left: 1.5rem;
 }
 
 .submit {
@@ -46,16 +77,19 @@ ul {
 
 .refresh,
 .submit {
-  padding: 0.15rem;
-  font-size: 15px;
+  font-size: 3vw;
+  cursor: pointer;
+  background: #acaaa8;
+  padding: 0.4rem;
+  border: 1px solid white;
 }
 
 .recent-scores {
-  width: 30vw;
+  width: 40vw;
 }
 
 .add-score {
-  width: 20vw;
+  width: 30vw;
 }
 
 form {
@@ -71,10 +105,30 @@ form {
   border-radius: 2px;
 }
 
+.scores:hover {
+  transform: scale(1.05);
+}
+
 .scores li {
   padding: 0.4rem;
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 .scores li:nth-child(even) {
   background-color: rgb(189, 189, 189);
+}
+
+@media screen and (min-width: 768px) {
+  .refresh,
+  .submit {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
